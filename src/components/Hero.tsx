@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-clinic.jpg";
+import heroImage from "@/assets/hero-interior.jpg";
 
 const Hero = () => {
   return (
@@ -10,23 +10,23 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-overlay" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in-up">
         <div className="max-w-4xl mx-auto space-y-6">
-          <p className="text-primary text-sm font-semibold tracking-wider uppercase animate-fade-in">
+          <p className="text-accent text-sm font-semibold tracking-wider uppercase animate-fade-in">
             Bangkok's Premier Regenerative Medicine Center
           </p>
           
-          <h1 className="text-5xl md:text-7xl font-semibold font-serif leading-tight text-white/95">
+          <h1 className="text-5xl md:text-7xl font-semibold font-serif leading-tight text-white drop-shadow-lg">
             Your Personalized
             <br />
-            <span className="text-primary">Regenerative Solution</span>
+            <span className="text-accent">Regenerative Solution</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/85 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto drop-shadow-md">
             With regenerative therapies, our expert team revitalizes your body for a healthier future
           </p>
 
