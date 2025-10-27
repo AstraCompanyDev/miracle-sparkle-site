@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { UserSearch, ClipboardList, Sparkles, HeartPulse } from "lucide-react";
 import stemCellImg from "@/assets/stem-cell-therapy.jpg";
 import ivTherapyImg from "@/assets/lifestyle-iv.jpg";
 import immunotherapyImg from "@/assets/immunotherapy.jpg";
@@ -113,7 +114,7 @@ const Treatments = () => {
       {/* Process Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-semibold font-serif mb-6">
                 Our Treatment Process
@@ -123,23 +124,48 @@ const Treatments = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { step: "01", title: "Consultation", desc: "Comprehensive health assessment" },
-                { step: "02", title: "Plan", desc: "Personalized treatment design" },
-                { step: "03", title: "Treatment", desc: "Professional care delivery" },
-                { step: "04", title: "Follow-up", desc: "Ongoing support & monitoring" },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="text-center animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="text-5xl font-semibold text-primary/20 mb-4">{item.step}</div>
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
-                </div>
-              ))}
+                { 
+                  icon: UserSearch, 
+                  title: "Consultation", 
+                  desc: "Comprehensive health assessment and medical history review",
+                  color: "text-primary"
+                },
+                { 
+                  icon: ClipboardList, 
+                  title: "Custom Plan", 
+                  desc: "Personalized treatment protocol designed for your unique needs",
+                  color: "text-primary"
+                },
+                { 
+                  icon: Sparkles, 
+                  title: "Treatment", 
+                  desc: "Professional care delivery in our state-of-the-art facility",
+                  color: "text-primary"
+                },
+                { 
+                  icon: HeartPulse, 
+                  title: "Follow-up", 
+                  desc: "Ongoing support, monitoring and progress optimization",
+                  color: "text-primary"
+                },
+              ].map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div 
+                    key={index}
+                    className="bg-white rounded-xl p-6 text-center shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-1 animate-fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                      <Icon className={`w-8 h-8 ${item.color}`} />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
