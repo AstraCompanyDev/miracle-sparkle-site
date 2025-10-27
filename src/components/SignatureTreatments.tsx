@@ -41,7 +41,7 @@ const SignatureTreatments = () => {
             <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
               What We Do
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-semibold font-serif text-foreground mb-6">
               Explore Our Signature Therapies
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ const SignatureTreatments = () => {
                     <p className="text-sm mb-4 opacity-90 leading-relaxed">
                       {treatment.description}
                     </p>
-                    <h3 className="text-3xl font-bold font-['Playfair_Display'] mb-6">
+                    <h3 className="text-3xl font-semibold font-serif mb-6">
                       {treatment.title}
                     </h3>
                   </div>

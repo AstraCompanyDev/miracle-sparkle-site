@@ -46,7 +46,7 @@ const Services = () => {
       <section className="py-20 bg-gradient-hero text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-bold font-['Playfair_Display'] mb-6">
+            <h1 className="text-5xl md:text-6xl font-semibold font-serif mb-6">
               Our Services
             </h1>
             <p className="text-xl text-white/90 mb-8">
@@ -78,7 +78,7 @@ const Services = () => {
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                       <service.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-2xl font-bold font-['Playfair_Display'] mb-3">
+                    <h3 className="text-2xl font-semibold font-serif mb-3">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -97,7 +97,7 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] mb-6">
+              <h2 className="text-4xl md:text-5xl font-semibold font-serif mb-6">
                 Why Choose Miracle Regenerative
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -127,7 +127,7 @@ const Services = () => {
       <section className="py-20 bg-secondary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold font-['Playfair_Display'] mb-6">
+            <h2 className="text-4xl font-semibold font-serif mb-6">
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-white/90 mb-8">

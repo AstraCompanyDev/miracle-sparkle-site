@@ -60,7 +60,7 @@ const Blog = () => {
       <section className="py-20 bg-gradient-hero text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-bold font-['Playfair_Display'] mb-6">
+            <h1 className="text-5xl md:text-6xl font-semibold font-serif mb-6">
               Our Blog
             </h1>
             <p className="text-xl text-white/90 mb-8">
@@ -128,7 +128,7 @@ const Blog = () => {
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl font-bold font-['Playfair_Display'] mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl font-semibold font-serif mb-3 group-hover:text-primary transition-colors">
                       {post.title}
                     </h3>
                     
@@ -152,7 +152,7 @@ const Blog = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold font-['Playfair_Display'] mb-4">
+            <h2 className="text-4xl font-semibold font-serif mb-4">
               Stay Updated
             </h2>
             <p className="text-muted-foreground mb-8">

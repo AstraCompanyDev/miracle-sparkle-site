@@ -35,7 +35,7 @@ const VideoTestimonials = () => {
             <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
               Patient Stories
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-semibold font-serif text-foreground mb-6">
               Real Results, Real People
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ const VideoTestimonials = () => {
                 </div>
 
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {video.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">

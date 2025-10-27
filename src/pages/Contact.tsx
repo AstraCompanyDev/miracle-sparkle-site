@@ -38,7 +38,7 @@ const Contact = () => {
       <section className="py-20 bg-gradient-hero text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-bold font-['Playfair_Display'] mb-6">
+            <h1 className="text-5xl md:text-6xl font-semibold font-serif mb-6">
               Contact Us
             </h1>
             <p className="text-xl text-white/90 mb-8">
@@ -63,7 +63,7 @@ const Contact = () => {
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                       <info.icon className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="font-bold text-lg mb-3">{info.title}</h3>
+                    <h3 className="font-semibold text-lg mb-3">{info.title}</h3>
                     {info.link ? (
                       <a 
                         href={info.link}
@@ -86,7 +86,7 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
               <div className="animate-fade-in">
-                <h2 className="text-3xl font-bold font-['Playfair_Display'] mb-6">
+                <h2 className="text-3xl font-semibold font-serif mb-6">
                   Send Us a Message
                 </h2>
                 <form className="space-y-6">
@@ -144,12 +144,12 @@ const Contact = () => {
 
               {/* Quick Contact */}
               <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <h2 className="text-3xl font-bold font-['Playfair_Display'] mb-6">
+                <h2 className="text-3xl font-semibold font-serif mb-6">
                   Prefer to Chat Directly?
                 </h2>
                 
                 <div className="bg-gradient-card rounded-2xl p-8 shadow-soft mb-6">
-                  <h3 className="text-xl font-bold mb-4">Book Your FREE Discovery Call</h3>
+                  <h3 className="text-xl font-semibold mb-4">Book Your FREE Discovery Call</h3>
                   <p className="text-muted-foreground mb-6">
                     Connect with our expert team on WhatsApp for immediate assistance and personalized consultation.
                   </p>
@@ -165,7 +165,7 @@ const Contact = () => {
                 </div>
 
                 <div className="bg-gradient-card rounded-2xl p-8 shadow-soft">
-                  <h3 className="text-xl font-bold mb-4">Call Us Directly</h3>
+                  <h3 className="text-xl font-semibold mb-4">Call Us Directly</h3>
                   <p className="text-muted-foreground mb-6">
                     Speak with our team during business hours for immediate support.
                   </p>
@@ -189,7 +189,7 @@ const Contact = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold font-['Playfair_Display'] text-center mb-8">
+            <h2 className="text-3xl font-semibold font-serif text-center mb-8">
               Visit Our Clinic
             </h2>
             <div className="bg-muted rounded-2xl overflow-hidden shadow-soft h-96 flex items-center justify-center">

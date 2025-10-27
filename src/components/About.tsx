@@ -16,7 +16,7 @@ const About = () => {
             <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
               About Us
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-semibold font-serif text-foreground mb-6">
               Leading Stem Cell Clinic in the Heart of Bangkok
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -35,7 +35,7 @@ const About = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                   <stat.icon className="h-8 w-8 text-primary" />
                 </div>
-                <div className="text-4xl font-bold text-foreground mb-2">{stat.value}</div>
+                <div className="text-4xl font-semibold text-foreground mb-2">{stat.value}</div>
                 <div className="text-muted-foreground font-medium">{stat.label}</div>
               </div>
             ))}

@@ -18,8 +18,8 @@ const Experts = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-hover">
-                <div className="text-3xl font-bold">94%</div>
-                <div className="text-sm">Success Rate</div>
+                <div className="text-3xl font-semibold">94%</div>
+                <div className="text-sm font-normal">Success Rate</div>
               </div>
             </div>
 
@@ -28,7 +28,7 @@ const Experts = () => {
               <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
                 Meet Our Experts
               </p>
-              <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] text-foreground mb-6">
+              <h2 className="text-4xl md:text-5xl font-semibold font-serif text-foreground mb-6">
                 Expert and Professional in Regenerative Medicine
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">

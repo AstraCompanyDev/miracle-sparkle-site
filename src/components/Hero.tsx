@@ -20,7 +20,7 @@ const Hero = () => {
             Bangkok's Premier Regenerative Medicine Center
           </p>
           
-          <h1 className="text-5xl md:text-7xl font-bold font-serif leading-tight text-white/95">
+          <h1 className="text-5xl md:text-7xl font-semibold font-serif leading-tight text-white/95">
             Your Personalized
             <br />
             <span className="text-primary">Regenerative Solution</span>

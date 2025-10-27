@@ -38,7 +38,7 @@ const Testimonials = () => {
             <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
               Testimonials
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-semibold font-serif text-foreground mb-6">
               Hear From Our Patients
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">

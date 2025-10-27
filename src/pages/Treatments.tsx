@@ -56,7 +56,7 @@ const Treatments = () => {
       <section className="py-20 bg-gradient-hero text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-bold font-['Playfair_Display'] mb-6">
+            <h1 className="text-5xl md:text-6xl font-semibold font-serif mb-6">
               Our Treatments
             </h1>
             <p className="text-xl text-white/90 mb-8">
@@ -85,7 +85,7 @@ const Treatments = () => {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold font-['Playfair_Display'] mb-3">
+                    <h3 className="text-2xl font-semibold font-serif mb-3">
                       {treatment.title}
                     </h3>
                     <p className="text-muted-foreground mb-4">
@@ -115,7 +115,7 @@ const Treatments = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] mb-6">
+              <h2 className="text-4xl md:text-5xl font-semibold font-serif mb-6">
                 Our Treatment Process
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -135,8 +135,8 @@ const Treatments = () => {
                   className="text-center animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="text-5xl font-bold text-primary/20 mb-4">{item.step}</div>
-                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                  <div className="text-5xl font-semibold text-primary/20 mb-4">{item.step}</div>
+                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm">{item.desc}</p>
                 </div>
               ))}

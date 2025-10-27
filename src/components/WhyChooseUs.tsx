@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
               <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
                 What We Do
               </p>
-              <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] text-foreground mb-6">
+              <h2 className="text-4xl md:text-5xl font-semibold font-serif text-foreground mb-6">
                 Empower Your Tomorrow: Lifelong Vitality with Stem Cell Science
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">

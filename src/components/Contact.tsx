@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Header */}
           <div className="mb-12 animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] mb-6 text-foreground">
+            <h2 className="text-4xl md:text-5xl font-semibold font-serif mb-6 text-foreground">
               Book Your FREE Discovery Call
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
