@@ -1,7 +1,6 @@
 import clinicImage from "@/assets/clinic-interior-new.jpg";
-import bangkokImg from "@/assets/lifestyle-active.jpg";
-import advancedImg from "@/assets/stem-cell-therapy.jpg";
-import sereneImg from "@/assets/lifestyle-checkup.jpg";
+import chairsImg from "@/assets/clinic-chairs.jpg";
+import corridorImg from "@/assets/clinic-corridor.jpg";
 
 const ClinicShowcase = () => {
   return (
@@ -21,7 +20,7 @@ const ClinicShowcase = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-soft animate-fade-in group cursor-pointer">
               <img 
-                src={bangkokImg} 
+                src={chairsImg} 
                 alt="Bangkok Heart of the City"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -34,7 +33,7 @@ const ClinicShowcase = () => {
             
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-soft animate-fade-in group cursor-pointer" style={{ animationDelay: '0.1s' }}>
               <img 
-                src={advancedImg} 
+                src={corridorImg} 
                 alt="Advanced Technology & Facilities"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -47,7 +46,7 @@ const ClinicShowcase = () => {
             
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-soft animate-fade-in group cursor-pointer" style={{ animationDelay: '0.2s' }}>
               <img 
-                src={sereneImg} 
+                src={chairsImg} 
                 alt="Serene Modern Environment"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
