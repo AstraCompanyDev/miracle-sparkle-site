@@ -24,7 +24,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Miracle Regenerative Center" className="h-16 w-auto" />
+            <img src={logo} alt="Miracle Regenerative Center" className="h-20 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
