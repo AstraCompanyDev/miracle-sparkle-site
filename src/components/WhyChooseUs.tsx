@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
     {
       icon: Award,
       title: "Proven Results",
-      description: "85% success rate with over 5,800 patients treated",
+      description: "93% success rate with over 5,800 patients treated",
     },
   ];
 
