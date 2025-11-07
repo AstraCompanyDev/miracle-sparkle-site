@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import ivTherapyImg from "@/assets/lifestyle-iv.jpg";
 import stemCellImg from "@/assets/stem-cell-therapy.jpg";
 import skinImg from "@/assets/lifestyle-facial.jpg";
@@ -79,12 +80,14 @@ const SignatureTreatments = () => {
                   </div>
                   
                   <div className="flex justify-center">
-                    <Button 
-                      variant="secondary"
-                      className="bg-white text-foreground hover:bg-white/90 font-semibold px-8 rounded-full"
-                    >
-                      {treatment.cta}
-                    </Button>
+                    <Link to="/services">
+                      <Button 
+                        variant="secondary"
+                        className="bg-white text-foreground hover:bg-white/90 font-semibold px-8 rounded-full"
+                      >
+                        {treatment.cta}
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>

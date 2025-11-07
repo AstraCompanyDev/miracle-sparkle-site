@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MessageCircle, Instagram, Facebook } from "lucide-react";
+import { Menu, X, MessageCircle, Instagram, Facebook, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Navigation = () => {
@@ -65,6 +65,14 @@ const Navigation = () => {
               <Facebook className="h-5 w-5" />
             </a>
             <Button
+              variant="secondary"
+              className="gap-2"
+              onClick={() => window.open('tel:+6681734202', '_blank')}
+            >
+              <Phone className="h-4 w-4" />
+              Call Now
+            </Button>
+            <Button
               variant="whatsapp"
               className="gap-2"
               onClick={() => window.open('https://wa.me/6681734202', '_blank')}
@@ -125,8 +133,19 @@ const Navigation = () => {
               </a>
             </div>
             <Button
-              variant="whatsapp"
+              variant="secondary"
               className="w-full mt-4 gap-2"
+              onClick={() => {
+                setIsOpen(false);
+                window.open('tel:+6681734202', '_blank');
+              }}
+            >
+              <Phone className="h-4 w-4" />
+              Call Now
+            </Button>
+            <Button
+              variant="whatsapp"
+              className="w-full mt-2 gap-2"
               onClick={() => {
                 setIsOpen(false);
                 window.open('https://wa.me/6681734202', '_blank');

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,6 +9,7 @@ import ivTherapyImg from "@/assets/iv-therapy.jpg";
 import jointTherapyImg from "@/assets/joint-therapy.jpg";
 
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All Posts");
   const posts = [
     {
       title: "The Future of Regenerative Medicine",
@@ -81,8 +83,9 @@ const Blog = () => {
               {categories.map((category, index) => (
                 <button
                   key={index}
+                  onClick={() => setSelectedCategory(category)}
                   className={`px-6 py-2 rounded-full font-medium transition-all ${
-                    index === 0
+                    selectedCategory === category
                       ? "bg-primary text-white shadow-soft"
                       : "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary"
                   }`}
@@ -100,7 +103,9 @@ const Blog = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {posts.map((post, index) => (
+              {posts
+                .filter(post => selectedCategory === "All Posts" || post.category === selectedCategory)
+                .map((post, index) => (
                 <Card
                   key={index}
                   className="group overflow-hidden border-0 shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-in"
