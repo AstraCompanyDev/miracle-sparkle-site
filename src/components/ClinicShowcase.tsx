@@ -16,6 +16,7 @@ const ClinicShowcase = () => {
               className="w-full h-[500px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,hsl(45_70%_60%/0.15)_40%,hsl(14_60%_40%/0.4)_100%)]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-8">
               <h2 className="text-4xl md:text-6xl font-serif font-semibold mb-4 drop-shadow-lg">
                 Your Journey to <span className="text-accent">Wellness</span> & <span className="text-accent">Longevity</span>
