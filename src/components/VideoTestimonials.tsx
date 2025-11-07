@@ -1,12 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Play } from "lucide-react";
+import { useState } from "react";
 
 const VideoTestimonials = () => {
+  const [openVideo, setOpenVideo] = useState<string | null>(null);
+
   const videos = [
     {
       title: "Frankie's Regenerative Medicine Journey",
-      thumbnail: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
+      thumbnail: "https://img.youtube.com/vi/qPq-Wex7FgA/maxresdefault.jpg",
       embedUrl: "https://www.youtube.com/embed/qPq-Wex7FgA",
+      videoId: "qPq-Wex7FgA",
       patient: "Frankie",
       treatment: "Regenerative Medicine",
     },
@@ -46,43 +51,56 @@ const VideoTestimonials = () => {
           {/* Video Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {videos.map((video, index) => (
-              <Card
-                key={index}
-                className="group overflow-hidden border-0 shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="relative h-64 overflow-hidden bg-muted">
-                  {/* Video Thumbnail */}
-                  <img 
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  
-                  {/* Play Button Overlay */}
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
-                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-hover">
-                      <Play className="h-8 w-8 text-white fill-white ml-1" />
+              <Dialog key={index} open={openVideo === video.videoId} onOpenChange={(open) => setOpenVideo(open ? video.videoId : null)}>
+                <DialogTrigger asChild>
+                  <Card
+                    className="group overflow-hidden border-0 shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="relative h-64 overflow-hidden bg-muted">
+                      {/* Video Thumbnail */}
+                      <img 
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      
+                      {/* Play Button Overlay */}
+                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
+                        <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-hover">
+                          <Play className="h-8 w-8 text-white fill-white ml-1" />
+                        </div>
+                      </div>
+
+                      {/* Treatment Badge */}
+                      <div className="absolute top-4 left-4">
+                        <span className="bg-white/90 backdrop-blur-sm text-foreground px-3 py-1 rounded-full text-xs font-medium">
+                          {video.treatment}
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Treatment Badge */}
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-white/90 backdrop-blur-sm text-foreground px-3 py-1 rounded-full text-xs font-medium">
-                      {video.treatment}
-                    </span>
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        {video.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        - {video.patient}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl w-full p-0">
+                  <div className="relative pt-[56.25%]">
+                    <iframe
+                      src={`${video.embedUrl}?autoplay=1`}
+                      className="absolute inset-0 w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
                   </div>
-                </div>
-
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {video.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    - {video.patient}
-                  </p>
-                </CardContent>
-              </Card>
+                </DialogContent>
+              </Dialog>
             ))}
           </div>
 
