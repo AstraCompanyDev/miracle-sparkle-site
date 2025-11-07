@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Play } from "lucide-react";
 import { useState } from "react";
+import frankieThumb from "@/assets/frankie-testimonial.jpg";
 
 const VideoTestimonials = () => {
   const [openVideo, setOpenVideo] = useState<string | null>(null);
@@ -9,7 +10,7 @@ const VideoTestimonials = () => {
   const videos = [
     {
       title: "Frankie's Regenerative Medicine Journey",
-      thumbnail: "https://img.youtube.com/vi/qPq-Wex7FgA/maxresdefault.jpg",
+      thumbnail: frankieThumb,
       embedUrl: "https://www.youtube.com/embed/qPq-Wex7FgA",
       videoId: "qPq-Wex7FgA",
       patient: "Frankie",
