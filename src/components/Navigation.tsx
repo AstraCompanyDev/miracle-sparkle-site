@@ -12,7 +12,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
     { name: "Treatments", path: "/treatments" },
-    { name: "Blog", path: "/blog" },
+    // { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
 
