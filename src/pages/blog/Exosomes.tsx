@@ -247,7 +247,7 @@ const Exosomes = () => {
 
 
             {/* Related Posts */}
-            <RelatedBlogPosts currentSlug="what-are-exosomes" category="Regenerative Therapy" />
+            <RelatedBlogPosts currentSlug="exosomes" category="Regenerative Therapy" />
           </div>
 
         </div>
