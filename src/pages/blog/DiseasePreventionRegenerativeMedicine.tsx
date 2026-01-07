@@ -118,31 +118,31 @@ const DiseasePreventionRegenerativeMedicine = () => {
                 <li className="flex gap-2 text-muted-foreground">
                   <span className="text-primary font-bold">•</span>
                   <span>
-                    Balanced nutrition with vitamins, minerals, and antioxidants that support cellular health
+                    <strong className="text-foreground">Balanced nutrition</strong> with vitamins, minerals, and antioxidants that support cellular health
                   </span>
                 </li>
                 <li className="flex gap-2 text-muted-foreground">
                   <span className="text-primary font-bold">•</span>
                   <span>
-                    Regular physical activity to maintain cardiovascular, joint, and lung health
+                    <strong className="text-foreground">Regular physical activity</strong> to maintain cardiovascular, joint, and lung health
                   </span>
                 </li>
                 <li className="flex gap-2 text-muted-foreground">
                   <span className="text-primary font-bold">•</span>
                   <span>
-                    Quality sleep to allow the body to repair and rejuvenate naturally
+                    <strong className="text-foreground">Quality sleep</strong> to allow the body to repair and rejuvenate naturally
                   </span>
                 </li>
                 <li className="flex gap-2 text-muted-foreground">
                   <span className="text-primary font-bold">•</span>
                   <span>
-                    Stress management through mindfulness, meditation, or relaxation techniques
+                    <strong className="text-foreground">Stress management</strong> through mindfulness, meditation, or relaxation techniques
                   </span>
                 </li>
                 <li className="flex gap-2 text-muted-foreground">
                   <span className="text-primary font-bold">•</span>
                   <span>
-                    Hydration and detoxification to support metabolic and immune function
+                    <strong className="text-foreground">Hydration and detoxification</strong> to support metabolic and immune function
                   </span>
                 </li>
               </ul>
