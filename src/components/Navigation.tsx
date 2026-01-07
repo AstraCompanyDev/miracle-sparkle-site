@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle, Instagram, Facebook, Phone } from "lucide-react";
-import logo from "@/assets/logo-transparent.png";
+import logo from "@/assets/logo-new.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
