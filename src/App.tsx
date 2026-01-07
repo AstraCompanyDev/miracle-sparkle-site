@@ -15,6 +15,7 @@ import DiseasePreventionRegenerativeMedicine from "./pages/blog/DiseasePreventio
 import Exosomes from "./pages/blog/Exosomes";
 import ImmuneSystem from "./pages/blog/ImmuneSystem";
 import IVTherapy from "./pages/blog/IVTherapy";
+import JointPain from "./pages/blog/JointPain";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/blog/exosomes" element={<Exosomes />} />
           <Route path="/blog/immune-system" element={<ImmuneSystem />} />
           <Route path="/blog/iv-therapy" element={<IVTherapy />} />
+          <Route path="/blog/joint-pain" element={<JointPain />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
