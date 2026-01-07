@@ -20,6 +20,7 @@ import Longevity from "./pages/blog/Longevity";
 import LungHealth from "./pages/blog/LungHealth";
 import NADPlus from "./pages/blog/NADPlus";
 import PowerOfWellness from "./pages/blog/PowerOfWellness";
+import StemCellTreatment from "./pages/blog/StemCellTreatment";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/blog/lung-health" element={<LungHealth />} />
           <Route path="/blog/nad-plus" element={<NADPlus />} />
           <Route path="/blog/power-of-wellness" element={<PowerOfWellness />} />
+          <Route path="/blog/stem-cell-treatment" element={<StemCellTreatment />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
