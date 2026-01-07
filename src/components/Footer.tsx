@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
-import logo from "@/assets/logo-new.png";
+import logo from "@/assets/logo-transparent.png";
 
 const Footer = () => {
   return (
