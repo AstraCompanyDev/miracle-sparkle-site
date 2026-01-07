@@ -13,6 +13,7 @@ import BlogPost from "./pages/BlogPost";
 import AntiAgingLongevity from "./pages/blog/AntiAgingLongevity";
 import DiseasePreventionRegenerativeMedicine from "./pages/blog/DiseasePreventionRegenerativeMedicine";
 import Exosomes from "./pages/blog/Exosomes";
+import ImmuneSystem from "./pages/blog/ImmuneSystem";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/blog/anti-aging-longevity" element={<AntiAgingLongevity />} />
           <Route path="/blog/disease-prevention-regenerative-medicine" element={<DiseasePreventionRegenerativeMedicine />} />
           <Route path="/blog/exosomes" element={<Exosomes />} />
+          <Route path="/blog/immune-system" element={<ImmuneSystem />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
